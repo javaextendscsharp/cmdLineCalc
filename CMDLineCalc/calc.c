@@ -16,15 +16,9 @@ void help(void);
 int main(int argc, char *argv[])
 {
     /* check if enough arguments were passed */
-    if (argc > 4)
+    if (argc != 4)
     {
-        printf("ERROR! Too many arguments...\n");
-        help();
-        exit(EXIT_FAILURE);
-    }
-    else if (argc < 4)
-    {
-        printf("ERROR! Not enough arguments...\n");
+        printf("ERROR! 3 arguments expected...\n");
         help();
         exit(EXIT_FAILURE);
     }
